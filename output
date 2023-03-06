@@ -1,0 +1,8 @@
+digraph simple_dag {
+	graph [label=simple_dag labelloc=t rankdir=LR]
+	print_date [color="#000000" fillcolor="#f0ede4" label=print_date shape=rectangle style="filled,rounded"]
+	print_end [color="#000000" fillcolor="#f0ede4" label=print_end shape=rectangle style="filled,rounded"]
+	sleep [color="#000000" fillcolor="#f0ede4" label=sleep shape=rectangle style="filled,rounded"]
+	print_date -> sleep
+	sleep -> print_end
+}
